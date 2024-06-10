@@ -1,5 +1,4 @@
 import numpy as np
-## TODO add equal freq binning
 
 
 def quantile_binning(baseline:np.ndarray, production:np.ndarray, bin_num:int=10, eps:float=1e-5):
