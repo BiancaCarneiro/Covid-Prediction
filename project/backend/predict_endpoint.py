@@ -6,6 +6,7 @@ import joblib
 import numpy as np
 
 # http://127.0.0.1:8000/
+# swagger
 
 MODEL_PATH = "../models/random_forest_model.pkl"
 
@@ -29,12 +30,6 @@ def predict(request: PredictionRequest):
     prediction = model.predict(input_data)
 
     return {"prediction": prediction[0]}
-
-
-@app.get("/", response_class=HTMLResponse)
-def read_root():
-    with open("prediction.html") as f:
-        return HTMLResponse(f.read())
 
 
 if __name__ == '__main__':

@@ -1,5 +1,4 @@
 project/models/mlruns
 *.pyc
-*.csv
 */.DS_Store
 .DS_Store
