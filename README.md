@@ -6,6 +6,11 @@ O objetivo desse projeto é criar modelos de Machine Learning que consigam preve
 
 Esse é um projeto da disciplina IF697 - Introdução Ciência de Dados. 2024.1 autorado por Bianca Ferreira (bccnf)
 
+## Features bônus
+* Análise de Drift das features antes vs depois da vacina
+* Backend com endpoint para executar as previsões (não deployado)
+* Clustering para a visualização dos dados
+
 ## Links
  * Dataset: [COVID 19 Death Prediction](https://www.kaggle.com/competitions/Covid19-Death-Predictions/data?select=train.csv)
  * Vídeo de apresentação: [Previsão de mortes do covid](https://www.youtube.com/watch?v=TFK2Rm44vQA)
