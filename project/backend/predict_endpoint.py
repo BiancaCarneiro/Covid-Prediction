@@ -8,7 +8,7 @@ import numpy as np
 # http://127.0.0.1:8000/
 # swagger
 
-MODEL_PATH = "../models/random_forest_model.pkl"
+MODEL_PATH = "../models/prod_model.pkl"
 
 app = FastAPI()
 
@@ -22,8 +22,8 @@ class PredictionRequest(BaseModel):
 @app.post("/predict")
 def predict(request: PredictionRequest):
 
-    if len(request.features) != 20:
-        raise HTTPException(status_code=400, detail="Number of features must be 20")
+    if len(request.features) != 28:
+        raise HTTPException(status_code=400, detail=f"Number of features must be 29, got {len(request.features)}.")
 
     input_data = np.array(request.features).reshape(1, -1)
 
